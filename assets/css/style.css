@@ -342,11 +342,11 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
 
 .additional-services-section .additional-services-box {
   padding: 20px;
-  background-color: rgba(75, 71, 72, 0.09);
+  background-color: #053067;
 }
 
 .additional-services-section .additional-services-box a {
-  border-right: 1px solid #053067;
+  border-right: 1px solid white;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -355,13 +355,13 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #053067;
+  color: white;
   font-size: 30px;
   margin: 0 -14px;
 }
 
 .additional-services-section .additional-services-box a:hover {
-  color: black;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .additional-services-section .additional-services-box a.border-n {
@@ -596,6 +596,16 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   .footer-section .copy-box {
     text-align: center;
     display: block;
+  }
+  .additional-services-section .additional-services-box a {
+    border-right: unset;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+  }
+  .additional-services-section .additional-services-box a span {
+    margin: 10px 0 0;
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
