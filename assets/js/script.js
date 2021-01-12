@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    $('.nav-bar-section .nav-box ul li').click(function(){
+        $(this).children('.sub-menu').toggle();
+        $(this).siblings('li').children('.sub-menu').hide();
+    });
+
 
     // search box
     $('.search-button').click(function(){
@@ -14,5 +19,5 @@ $(document).ready(function(){
     // niceSelect
     $(".select-box").niceSelect();
 
-    
+
 });

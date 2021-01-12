@@ -43,7 +43,7 @@ body {
   color: #053067;
 }
 
-.trans-4, .link-box .link-style, .search-box-pop, .search-box-pop .search-box-pop-form .search-form .form-group input, .search-box-pop .search-box-pop-form .search-form .form-group .search-form-button, .search-box-pop .search-box-pop-form .close-pop-botton span, .nav-bar-section .nav-box ul li .sub-menu, .nav-bar-section .nav-box ul li .sub-menu li a, .nav-bar-section .nav-box ul li a, .plan-section .plan-box .plan-link, .about-section .about-box .about-link img, .about-section .about-box .about-link .about-text, .footer-section .footer-ul ul li a {
+.trans-4, .link-box .link-style, .search-box-pop, .search-box-pop .search-box-pop-form .search-form .form-group input, .search-box-pop .search-box-pop-form .search-form .form-group .search-form-button, .search-box-pop .search-box-pop-form .close-pop-botton span, .top-header .top-header-ul ul li a, .nav-bar-section .nav-box ul li .sub-menu li a, .nav-bar-section .nav-box ul li a, .plan-section .plan-box .plan-link, .about-section .about-box .about-link img, .about-section .about-box .about-link .about-text, .footer-section .footer-ul ul li a {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -224,20 +224,30 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
 }
 
 .top-header .top-header-ul ul li {
-  margin: 0 0 0 18px;
+  padding: 0 10px 5px;
+  border-right: 1px dotted white;
+}
+
+.top-header .top-header-ul ul li:last-of-type {
+  border-right: 0px;
 }
 
 .top-header .top-header-ul ul li a {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
   color: white;
+}
+
+.top-header .top-header-ul ul li a:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .top-header .top-header-ul ul li .lang-select {
   background: transparent;
-  width: 99px;
+  width: 60px;
   color: white;
   border: 0;
+  font-size: 14px;
 }
 
 .top-header .top-header-ul ul li .lang-select:focus {
@@ -288,26 +298,18 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   position: relative;
 }
 
-.nav-bar-section .nav-box ul li:hover .sub-menu {
-  top: 19px;
-  visibility: visible;
-  opacity: 1;
-}
-
 .nav-bar-section .nav-box ul li .sub-menu {
   left: -44px;
   position: absolute;
   background-color: white;
   -webkit-box-shadow: 0px 0px 12px rgba(75, 71, 72, 0.2);
           box-shadow: 0px 0px 12px rgba(75, 71, 72, 0.2);
-  visibility: hidden;
-  opacity: 0;
-  display: block;
+  display: none;
   margin: 15px 0 0;
   width: 140px;
   height: unset;
   width: 250px;
-  top: 50px;
+  top: 22px;
 }
 
 .nav-bar-section .nav-box ul li .sub-menu li {

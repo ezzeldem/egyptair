@@ -204,17 +204,26 @@ body {
       display: flex;
       justify-content: flex-end;
       li {
-        margin: 0 0 0 18px;
+        &:last-of-type {
+          border-right: 0px;
+        }
+        padding: 0 10px 5px;
+        border-right: 1px dotted rgba($white-color, 1);
         a {
           font-weight: 400;
-          font-size: 14px;
+          font-size: 10px;
           color: rgba($white-color, 1);
+          @extend.trans-4;
+          &:hover{
+            color: rgba($white-color, .7);
+          }
         }
         .lang-select {
           background: transparent;
-          width: 99px;
+          width: 60px;
           color: rgba($white-color, 1);
           border: 0;
+          font-size: 14px;
           &:focus {
             outline: none;
             box-shadow: none;
@@ -251,27 +260,17 @@ body {
       li {
         margin: 0 20px;
         position: relative;
-        &:hover {
-          .sub-menu {
-            top: 19px;
-            visibility: visible;
-            opacity: 1;
-          }
-        }
         .sub-menu {
-          @extend.trans-4;
           left: -44px;
           position: absolute;
           background-color: rgba($white-color, 1);
           box-shadow: 0px 0px 12px rgba($gray-color, 0.2);
-          visibility: hidden;
-          opacity: 0;
-          display: block;
+          display: none;
           margin: 15px 0 0;
           width: 140px;
           height: unset;
           width: 250px;
-          top: 50px;
+          top: 22px;
           li {
             margin: 0;
             a {
