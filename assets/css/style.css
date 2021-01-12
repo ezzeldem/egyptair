@@ -297,5 +297,9 @@ body {
     width: 75%;
     font-size: 12px;
   }
+  .footer-section .copy-box {
+    text-align: center;
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
