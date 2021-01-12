@@ -321,6 +321,10 @@ body {
             color: rgba($min-color, 1);
             font-size: 30px;
             margin: 0 -14px;
+            @extend.trans-4;
+            &:hover{
+                color: rgba($balck-color, 1);
+            }
             &.border-n{
                 border-right: unset;
             }
