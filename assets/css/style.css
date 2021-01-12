@@ -340,6 +340,33 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   color: black;
 }
 
+.additional-services-section .additional-services-box {
+  padding: 20px;
+  background-color: rgba(75, 71, 72, 0.09);
+}
+
+.additional-services-section .additional-services-box a {
+  border-right: 1px solid #053067;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #053067;
+  font-size: 30px;
+}
+
+.additional-services-section .additional-services-box a.border-n {
+  border-right: unset;
+}
+
+.additional-services-section .additional-services-box a span {
+  font-size: 14px;
+}
+
 .plan-section .plan-box {
   margin: 5px 0;
 }

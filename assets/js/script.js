@@ -1,9 +1,18 @@
 $(document).ready(function(){
 
-    $('.nav-bar-section .nav-box ul li').click(function(){
+    
+    
+    
+    // opne nav-menu
+    $('.nav-bar-section .nav-box ul li').click(function(e){
+        e.stopPropagation();
         $(this).children('.sub-menu').toggle();
         $(this).siblings('li').children('.sub-menu').hide();
     });
+    $(document).click(function(){
+        $('.nav-bar-section .nav-box ul li').children('.sub-menu').hide();
+    });
+    
 
 
     // search box
