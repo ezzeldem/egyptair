@@ -357,6 +357,7 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
           flex-direction: column;
   color: #053067;
   font-size: 30px;
+  margin: 0 -14px;
 }
 
 .additional-services-section .additional-services-box a.border-n {
@@ -364,6 +365,7 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
 }
 
 .additional-services-section .additional-services-box a span {
+  margin: 10px 0 0;
   font-size: 14px;
 }
 

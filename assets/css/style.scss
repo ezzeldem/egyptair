@@ -320,10 +320,12 @@ body {
             flex-direction: column;
             color: rgba($min-color, 1);
             font-size: 30px;
+            margin: 0 -14px;
             &.border-n{
                 border-right: unset;
             }
             span{
+                margin: 10px 0 0;
                 font-size: 14px;
             }
         }
