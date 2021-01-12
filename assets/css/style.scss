@@ -62,6 +62,22 @@ body{
 }
 
 
+.link-box{
+    .link-style{
+        text-align: center;
+        padding: 10px 30px;
+        background-color: rgba($min-color, 1);
+        color: rgba($white-color, 1);
+        border: 1px solid rgba($balck-color, 1.0);
+        @extend.trans-4;
+        &:hover{
+            color: rgba($min-color, 1);
+            background-color: rgba($white-color, 1);
+        }
+    }
+}
+
+
 .link-box2{
     .link-style{
         font-weight: 500;
@@ -155,17 +171,6 @@ body{
 }
 
 // plan-section
-
-
-.link-box{
-    .link-style{
-        text-align: center;
-        padding: 10px 30px;
-        background-color: rgba($min-color, 1);
-        color: rgba($white-color, 1);
-        border: 1px solid rgba($balck-color, 1.0);
-    }
-}
 
 
 
@@ -298,3 +303,20 @@ body{
 }
 
 // footer-section
+
+
+
+@media(max-width:772px){
+    .banner-section{
+        padding: 50px 0 50px;
+         .title-box{
+              .title{
+                font-size: 22px;
+              }
+              .prag {
+                width: 75%;
+                font-size: 12px;
+            }
+            }
+        }
+}

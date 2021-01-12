@@ -43,9 +43,22 @@ body {
   color: #053067;
 }
 
-.trans-4, .plan-section .plan-box .plan-link, .about-section .about-box .about-link img, .about-section .about-box .about-link .about-text, .footer-section .footer-ul ul li a {
+.trans-4, .link-box .link-style, .plan-section .plan-box .plan-link, .about-section .about-box .about-link img, .about-section .about-box .about-link .about-text, .footer-section .footer-ul ul li a {
   -webkit-transition: .4s all ease-in-out;
   transition: .4s all ease-in-out;
+}
+
+.link-box .link-style {
+  text-align: center;
+  padding: 10px 30px;
+  background-color: #053067;
+  color: white;
+  border: 1px solid black;
+}
+
+.link-box .link-style:hover {
+  color: #053067;
+  background-color: white;
 }
 
 .link-box2 .link-style {
@@ -142,14 +155,6 @@ body {
 .plan-section .plan-box .plan-link .prag {
   font-size: 10px;
   padding: 0 30px;
-}
-
-.link-box .link-style {
-  text-align: center;
-  padding: 10px 30px;
-  background-color: #053067;
-  color: white;
-  border: 1px solid black;
 }
 
 .banner-section {
@@ -279,5 +284,18 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 772px) {
+  .banner-section {
+    padding: 50px 0 50px;
+  }
+  .banner-section .title-box .title {
+    font-size: 22px;
+  }
+  .banner-section .title-box .prag {
+    width: 75%;
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
