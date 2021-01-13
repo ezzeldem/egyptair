@@ -244,7 +244,7 @@ body {
 .nav-bar-section {
   position: relative;
   z-index: 1;
-  padding: 14px 0;
+  padding: 14px 0; margin: 0;
   box-shadow: 0px 0px 12px rgba($gray-color, 0.2);
   .nav-box {
     height: 100%;
@@ -305,10 +305,26 @@ body {
 
 // nav-bar-section
 
+// banner-section
+.bannerIntro-section{
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+// banner-section
+
+
+
+
+
+
 // boogink-section
 
 .boogink-section {
-  margin: 60px 0 0;
+  margin: -535px 0 0;
   .list-group {
     display: flex;
     flex-direction: row;
