@@ -397,6 +397,19 @@ body {
   .tab-content {
     background-color: rgba($min-color, 1);
     padding: 40px;
+    position: relative;
+    z-index: 1;  
+  &:after {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 325px;
+    background: url("../img/figNewsletterr.png") no-repeat;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    transform: rotateY(184deg);
+  }
     .tap-title {
       color: rgba($white-color, 1);
       font-size: 20px;
@@ -746,16 +759,6 @@ body {
   z-index: 1;
   padding: 60px 0 20px;
   background-color: rgba($gray-color, 0.04);
-  &:after {
-    content: "";
-    position: absolute;
-    width: 240px;
-    height: 325px;
-    background: url("../img/figNewsletterr.png") no-repeat;
-    z-index: -1;
-    top: 0;
-    left: 0;
-  }
   .footer-ul {
     .footer-ul-title {
       font-size: 14px;
