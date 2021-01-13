@@ -417,7 +417,6 @@ body {
   .tab-content {
     background-color: rgba($min-color, 1);
     padding: 40px;
-    z-index: -1;
     position: relative;
     &:after {
       content: "";
@@ -995,17 +994,16 @@ body {
     }
   }
 
-
-  .plan-section{
-     .plan-box{
-        .plan-link{
-          overflow: hidden;
-          &:hover{
-            transform: scale(1);
-          }
+  .plan-section {
+    .plan-box {
+      .plan-link {
+        overflow: hidden;
+        &:hover {
+          transform: scale(1);
         }
       }
     }
+  }
 
   .bannerIntro-section {
     height: 41vh;
@@ -1035,6 +1033,32 @@ body {
       }
     }
     .tab-content {
+      .booking-Tapform {
+        .submite-buttom{
+           button{
+            font-size: 14px;
+            padding: 9px 39px;
+           }
+           .buttn-span{
+             display: block;
+             margin: 5px 0 0;
+           }
+          }
+        .selcet-row {
+          .select-box {
+            width: 100% !important;
+            select {
+              width: 100% !important;
+            }
+          }
+        }
+        .form-group {
+          width: 100%;
+          input {
+            width: 100% !important;
+          }
+        }
+      }
       .prag {
         font-size: 12px;
         margin: 8px 0;
@@ -1064,18 +1088,15 @@ body {
     }
   }
 
-
-  .open-pop-up{
-     .search-box-pop-form{
-        .search-form{
-           .form-group{
-              input{
-                width: 100%;
-              }
-            }
+  .open-pop-up {
+    .search-box-pop-form {
+      .search-form {
+        .form-group {
+          input {
+            width: 100%;
           }
         }
       }
-
-
+    }
+  }
 }

@@ -471,7 +471,6 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
 .boogink-section .tab-content {
   background-color: #053067;
   padding: 40px;
-  z-index: -1;
   position: relative;
 }
 
@@ -1119,6 +1118,26 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   }
   .boogink-section .list-group .list-group-item::before, .boogink-section .list-group .list-group-item::after {
     display: none;
+  }
+  .boogink-section .tab-content .booking-Tapform .submite-buttom button {
+    font-size: 14px;
+    padding: 9px 39px;
+  }
+  .boogink-section .tab-content .booking-Tapform .submite-buttom .buttn-span {
+    display: block;
+    margin: 5px 0 0;
+  }
+  .boogink-section .tab-content .booking-Tapform .selcet-row .select-box {
+    width: 100% !important;
+  }
+  .boogink-section .tab-content .booking-Tapform .selcet-row .select-box select {
+    width: 100% !important;
+  }
+  .boogink-section .tab-content .booking-Tapform .form-group {
+    width: 100%;
+  }
+  .boogink-section .tab-content .booking-Tapform .form-group input {
+    width: 100% !important;
   }
   .boogink-section .tab-content .prag {
     font-size: 12px;
