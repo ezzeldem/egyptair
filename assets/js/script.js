@@ -25,8 +25,7 @@ $(document).ready(function(){
         $('body').removeClass('over-flow');
     });
 
-    // niceSelect
-    $(".select-box").niceSelect();
-
+    // datepicker
+    $( ".inputdatepicker" ).datepicker();
 
 });

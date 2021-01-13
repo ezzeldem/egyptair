@@ -43,7 +43,7 @@ body {
   color: #053067;
 }
 
-.trans-4, .link-box .link-style, .search-box-pop, .search-box-pop .search-box-pop-form .search-form .form-group input, .search-box-pop .search-box-pop-form .search-form .form-group .search-form-button, .search-box-pop .search-box-pop-form .close-pop-botton span, .top-header .top-header-ul ul li a, .nav-bar-section .nav-box ul li .sub-menu li a, .nav-bar-section .nav-box ul li a, .additional-services-section .additional-services-box a, .plan-section .plan-box .plan-link, .about-section .about-box .about-link img, .about-section .about-box .about-link .about-text, .footer-section .footer-ul ul li a {
+.trans-4, .link-box .link-style, .search-box-pop, .search-box-pop .search-box-pop-form .search-form .form-group input, .search-box-pop .search-box-pop-form .search-form .form-group .search-form-button, .search-box-pop .search-box-pop-form .close-pop-botton span, .top-header .top-header-ul ul li a, .nav-bar-section .nav-box ul li .sub-menu li a, .nav-bar-section .nav-box ul li a, .boogink-section .list-group .list-group-item i, .boogink-section .tab-content .booking-Tapform .submite-buttom button, .additional-services-section .additional-services-box a, .plan-section .plan-box .plan-link, .about-section .about-box .about-link img, .about-section .about-box .about-link .about-text, .footer-section .footer-ul ul li a {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -338,6 +338,275 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
 
 .nav-bar-section .nav-box ul li a:hover {
   color: black;
+}
+
+.boogink-section {
+  margin: 60px 0;
+}
+
+.boogink-section .list-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+}
+
+.boogink-section .list-group .list-group-item {
+  background-color: rgba(5, 48, 103, 0.6);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 0;
+  border-radius: 0;
+  height: 100%;
+  padding-left: 51px;
+  padding-right: 25px;
+  position: relative;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.boogink-section .list-group .list-group-item i {
+  font-size: 24px;
+}
+
+.boogink-section .list-group .list-group-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -39px;
+  height: 63px;
+  width: 46px;
+  opacity: 0;
+  border-top-right-radius: 100%;
+  background-color: #053067;
+  -webkit-box-shadow: 4px 0px 2px rgba(255, 255, 255, 0.4);
+          box-shadow: 4px 0px 2px rgba(255, 255, 255, 0.4);
+}
+
+.boogink-section .list-group .list-group-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -39px;
+  height: 63px;
+  width: 46px;
+  opacity: 0;
+  border-top-left-radius: 100%;
+  -webkit-box-shadow: -4px 0px 2px rgba(255, 255, 255, 0.4);
+          box-shadow: -4px 0px 2px rgba(255, 255, 255, 0.4);
+  background-color: #053067;
+}
+
+.boogink-section .list-group .list-group-item.active {
+  padding: 16px;
+  background-color: #053067;
+  color: white;
+  border: 0;
+}
+
+.boogink-section .list-group .list-group-item.active i {
+  -webkit-transform: translate(-9px, -17px);
+          transform: translate(-9px, -17px);
+  text-shadow: 12px 6px rgba(255, 255, 255, 0.3);
+}
+
+.boogink-section .list-group .list-group-item.active::after, .boogink-section .list-group .list-group-item.active::before {
+  opacity: 1;
+}
+
+.boogink-section .tab-content {
+  background-color: #053067;
+  padding: 40px;
+}
+
+.boogink-section .tab-content .tap-title {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.boogink-section .tab-content .booking-Tapform .inputCont {
+  margin: 20px 0;
+}
+
+.boogink-section .tab-content .booking-Tapform .inputCont span {
+  margin: 0 10px 0 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.boogink-section .tab-content .booking-Tapform .inputCont span label {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.boogink-section .tab-content .booking-Tapform .inputCont span.multiTxt a {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  text-decoration: underline;
+}
+
+.boogink-section .tab-content .booking-Tapform .form-group {
+  display: inline-block;
+  position: relative;
+}
+
+.boogink-section .tab-content .booking-Tapform .form-group label {
+  display: block;
+  color: white;
+}
+
+.boogink-section .tab-content .booking-Tapform .form-group input {
+  color: white;
+  height: 40px;
+  border-radius: 5px;
+  width: 280px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  position: relative;
+  z-index: 1;
+}
+
+.boogink-section .tab-content .booking-Tapform .form-group input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.boogink-section .tab-content .booking-Tapform .form-group .icone-input-side {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: white;
+  top: 32px;
+  height: 40px;
+  width: 40px;
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  right: 0;
+}
+
+.boogink-section .tab-content .booking-Tapform .aspNetDisabled {
+  color: white;
+}
+
+.boogink-section .tab-content .booking-Tapform .aspNetDisabled label {
+  margin: 0 10px;
+}
+
+.boogink-section .tab-content .booking-Tapform .selcet-row {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.boogink-section .tab-content .booking-Tapform .selcet-row .select-box .selct-info {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0;
+  color: white;
+}
+
+.boogink-section .tab-content .booking-Tapform .selcet-row .select-box select {
+  height: 44px;
+  width: 220px;
+  border-radius: 5px;
+  padding: 0 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: transparent;
+  color: white;
+}
+
+.boogink-section .tab-content .booking-Tapform .selcet-row .select-box select option {
+  color: #4b4748;
+}
+
+.boogink-section .tab-content .booking-Tapform .directfly-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.boogink-section .tab-content .booking-Tapform .directfly-box .classOption-plane {
+  margin: 0 30px 0 0;
+}
+
+.boogink-section .tab-content .booking-Tapform .directfly-box .classOption-plane label {
+  display: block;
+  color: white;
+}
+
+.boogink-section .tab-content .booking-Tapform .directfly-box .classOption-plane select {
+  height: 44px;
+  width: 220px;
+  border-radius: 5px;
+  padding: 0 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: transparent;
+  color: white;
+}
+
+.boogink-section .tab-content .booking-Tapform .directfly-box .classOption-plane select option {
+  color: #4b4748;
+}
+
+.boogink-section .tab-content .booking-Tapform .directfly-box .smallTxt label {
+  cursor: pointer;
+  margin: 0 10px;
+  color: white;
+}
+
+.boogink-section .tab-content .booking-Tapform .submite-buttom {
+  margin: 40px 0 0;
+}
+
+.boogink-section .tab-content .booking-Tapform .submite-buttom button {
+  border: 1px solid white;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 42px;
+  background-color: white;
+  color: #053067;
+}
+
+.boogink-section .tab-content .booking-Tapform .submite-buttom button:hover {
+  background-color: transparent;
+  color: white;
 }
 
 .additional-services-section .additional-services-box {

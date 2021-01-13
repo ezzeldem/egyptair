@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css"
+        integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -281,6 +283,198 @@
 
 
 
+                <!-- boogink-section -->
+                <div class="boogink-section pad-20">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="list-group" id="myList" role="tablist">
+                                    <a class="list-group-item list-group-item-action active" data-toggle="list"
+                                        href="#tab1" role="tab">
+                                        <i class="fas fa-plane-departure"></i>
+                                        <span>Book</span>
+                                    </a>
+                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#tab2"
+                                        role="tab">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <span> Timetable </span>
+                                    </a>
+                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#tab3"
+                                        role="tab">
+                                        <i class="far fa-clock"></i>
+                                        <span>Flight Status</span>
+                                    </a>
+                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#tab4"
+                                        role="tab">
+                                        <i class="fas fa-bookmark"></i>
+                                        <span> My Booking </span>
+                                    </a>
+                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#tab5"
+                                        role="tab">
+                                        <i class="fas fa-check-double"></i>
+                                        <span>Check-in</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="tab-content">
+
+                                    <div class="tab-pane active" id="tab1" role="tabpanel">
+
+                                        <h4 class="tap-title">
+                                            Book Your Flight!
+                                        </h4>
+
+                                        <form class="booking-Tapform" action="">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="inputCont">
+                                                        <span class="grayColor smallTxt mrgR10"><input id="round-buttom"
+                                                                type="radio" name="bookingRadio" value="rbRound"
+                                                                checked="checked" /><label for="round-buttom">Round
+                                                                Trip</label></span>
+                                                        <span class="grayColor smallTxt mrgR10"><input id="oneWay"
+                                                                type="radio" name="bookingRadio"
+                                                                value="rbOneWay" /><label for="oneWay">One
+                                                                Way</label></span>
+                                                        <span class="multiTxt"><a class="darkGoldColor smallTxt"
+                                                                href="#">Multi Destination</a> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="from">From</label>
+                                                        <input name="cityinput" type="text" id="from"
+                                                            class="autocomplete CHautocompletewidth smallTxt"
+                                                            aria-autocomplete="list" aria-owns="tat_table"
+                                                            title="Country From" aria-expanded="true" autocomplete="off"
+                                                            role="combobox" aria-describedby="deptInfo"
+                                                            aria-haspopup="true" valueisvalid="0">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="to">To</label>
+                                                        <input name="cityinput" type="text" id="to"
+                                                            class="autocomplete CHautocompletewidth smallTxt"
+                                                            aria-autocomplete="list" aria-owns="tat_table"
+                                                            title="Country to" aria-expanded="true" autocomplete="off"
+                                                            role="combobox" aria-describedby="deptInfo"
+                                                            aria-haspopup="true" valueisvalid="0">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="departure">Departure Date</label>
+                                                        <input type="text" id="departure"
+                                                            class="inputdatepicker side-icone">
+                                                        <span class="icone-input-side">
+                                                            <i class="fas fa-calendar-week"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="return">Return Date</label>
+                                                        <input type="text" id="return"
+                                                            class="inputdatepicker side-icone">
+                                                        <span class="icone-input-side">
+                                                            <i class="fas fa-calendar-week"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <span class="aspNetDisabled"><input id="options-buttom"
+                                                            type="checkbox" name="options" disabled=""><label
+                                                            for="options-buttom">Flexible dates (for better fare
+                                                            options)</label></span>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="selcet-row">
+                                                        <div class="select-box">
+                                                            <select name="adult" id="adult"
+                                                                class="small_textbox firstBookingSelect">
+                                                                <option selected="selected" value="1">1 Adult(s)
+                                                                </option>
+                                                                <option value="2">2 Adult(s)</option>
+                                                                <option value="3">3 Adult(s)</option>
+                                                                <option value="4">4 Adult(s)</option>
+                                                                <option value="5">5 Adult(s)</option>
+                                                                <option value="6">6 Adult(s)</option>
+                                                                <option value="7">7 Adult(s)</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="select-box">
+                                                            <select name="child-selct" id="child-selct"
+                                                                class="small_textbox">
+                                                                <option value="0">0 Child(ren)</option>
+                                                                <option value="1">1 Child(ren)</option>
+                                                                <option value="2">2 Child(ren)</option>
+                                                                <option value="3">3 Child(ren)</option>
+                                                                <option value="4">4 Child(ren)</option>
+                                                                <option value="5">5 Child(ren)</option>
+                                                                <option value="6">6 Child(ren)</option>
+                                                            </select>
+                                                            <span class="selct-info">
+                                                                2-11 years
+                                                            </span>
+                                                        </div>
+                                                        <div class="select-box">
+                                                            <select name="infantselect" id="infantselect"
+                                                                class="small_textbox">
+                                                                <option value="0">0 Infant(s)</option>
+                                                                <option value="1">1 Infant(s)</option>
+                                                            </select>
+                                                            <span class="selct-info">
+                                                                under 2 years
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="directfly-box">
+                                                        <div class="classOption-plane">
+                                                            <label for="class-option">
+                                                                Class
+                                                            </label>
+                                                            <select name="class-option" id="class-option"
+                                                                class="textbox formstyle">
+                                                                <option selected="selected" value="E">Best Fare</option>
+                                                                <option value="B">Business</option>
+                                                            </select>
+                                                        </div>
+                                                        <span class="smallTxt grayColor"><input id="directfly"
+                                                                type="checkbox" name="directfly"><label
+                                                                for="directfly">Direct
+                                                                Flights Only</label></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="submite-buttom">
+                                                        <button type="submit"> BOOK </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+
+
+                                    </div>
+                                    <div class="tab-pane" id="tab2" role="tabpanel">
+                                        sssss
+                                    </div>
+                                    <div class="tab-pane" id="tab3" role="tabpanel">
+                                        aaaa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- boogink-section -->
 
 
                 <!-- additional-services-section -->
@@ -740,7 +934,9 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
+        integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg=="
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
