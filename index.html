@@ -41,9 +41,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                <i class="fas fa-comments"></i> Feedback
-                                            </a>
+                                            <a href="#"> <i class="fas fa-comments"></i> Feedback </a>
                                         </li>
                                         <li>
                                             <form action="post">
@@ -58,9 +56,8 @@
                                             </form>
                                         </li>
                                         <li>
-                                            <a href="#" class="search-button">
-                                                <i class="fa fa-search" aria-hidden="true"></i> Search
-                                            </a>
+                                            <a href="#" class="search-button"> <i class="fa fa-search"
+                                                    aria-hidden="true"></i> Search </a>
                                         </li>
                                         <li>
                                             <a href="#">
@@ -280,9 +277,6 @@
         <!--           start content-->
         <div class="main-container">
             <main class="main wrapper">
-
-
-
                 <!-- boogink-section -->
                 <div class="boogink-section pad-20">
                     <div class="container">
@@ -309,8 +303,7 @@
                                         <i class="fas fa-bookmark"></i>
                                         <span> My Booking </span>
                                     </a>
-                                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#tab5"
-                                        role="tab">
+                                    <a class="list-group-item list-group-item-action" href="">
                                         <i class="fas fa-check-double"></i>
                                         <span>Check-in</span>
                                     </a>
@@ -319,11 +312,8 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-
                                 <div class="tab-content">
-
                                     <div class="tab-pane active" id="tab1" role="tabpanel">
-
                                         <h4 class="tap-title">
                                             Book Your Flight!
                                         </h4>
@@ -332,10 +322,11 @@
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <div class="inputCont">
-                                                        <span class="grayColor smallTxt mrgR10"><input id="round-buttom"
-                                                                type="radio" name="bookingRadio" value="rbRound"
-                                                                checked="checked" /><label for="round-buttom">Round
-                                                                Trip</label></span>
+                                                        <span class="grayColor smallTxt mrgR10">
+                                                            <input id="round-buttom" type="radio" name="bookingRadio"
+                                                                value="rbRound" checked="checked" /><label
+                                                                for="round-buttom">Round Trip</label>
+                                                        </span>
                                                         <span class="grayColor smallTxt mrgR10"><input id="oneWay"
                                                                 type="radio" name="bookingRadio"
                                                                 value="rbOneWay" /><label for="oneWay">One
@@ -352,7 +343,7 @@
                                                             aria-autocomplete="list" aria-owns="tat_table"
                                                             title="Country From" aria-expanded="true" autocomplete="off"
                                                             role="combobox" aria-describedby="deptInfo"
-                                                            aria-haspopup="true" valueisvalid="0">
+                                                            aria-haspopup="true" valueisvalid="0" />
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 col-md-12">
@@ -363,14 +354,14 @@
                                                             aria-autocomplete="list" aria-owns="tat_table"
                                                             title="Country to" aria-expanded="true" autocomplete="off"
                                                             role="combobox" aria-describedby="deptInfo"
-                                                            aria-haspopup="true" valueisvalid="0">
+                                                            aria-haspopup="true" valueisvalid="0" />
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 col-md-12">
                                                     <div class="form-group">
                                                         <label for="departure">Departure Date</label>
                                                         <input type="text" id="departure"
-                                                            class="inputdatepicker side-icone">
+                                                            class="inputdatepicker side-icone" />
                                                         <span class="icone-input-side">
                                                             <i class="fas fa-calendar-week"></i>
                                                         </span>
@@ -380,7 +371,7 @@
                                                     <div class="form-group">
                                                         <label for="return">Return Date</label>
                                                         <input type="text" id="return"
-                                                            class="inputdatepicker side-icone">
+                                                            class="inputdatepicker side-icone" />
                                                         <span class="icone-input-side">
                                                             <i class="fas fa-calendar-week"></i>
                                                         </span>
@@ -388,7 +379,7 @@
                                                 </div>
                                                 <div class="col-xs-12 col-sm-6">
                                                     <span class="aspNetDisabled"><input id="options-buttom"
-                                                            type="checkbox" name="options" disabled=""><label
+                                                            type="checkbox" name="options" disabled="" /><label
                                                             for="options-buttom">Flexible dates (for better fare
                                                             options)</label></span>
                                                 </div>
@@ -448,26 +439,215 @@
                                                             </select>
                                                         </div>
                                                         <span class="smallTxt grayColor"><input id="directfly"
-                                                                type="checkbox" name="directfly"><label
-                                                                for="directfly">Direct
-                                                                Flights Only</label></span>
+                                                                type="checkbox" name="directfly" /><label
+                                                                for="directfly">Direct Flights Only</label></span>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="submite-buttom">
-                                                        <button type="submit"> BOOK </button>
+                                                        <button type="submit">BOOK</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
-
-
                                     </div>
                                     <div class="tab-pane" id="tab2" role="tabpanel">
-                                        sssss
+                                        <h4 class="tap-title">
+                                            Timetable
+                                        </h4>
+
+                                        <p class="prag">
+                                            View current timetable information and indicate the departure or return date
+                                            of the flight ..to track real time arrival and departure information , visit
+                                            our flight status page
+                                        </p>
+
+                                        <form class="booking-Tapform" action="">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="inputCont">
+                                                        <span class="grayColor smallTxt mrgR10">
+                                                            <input id="round-buttom" type="radio" name="bookingRadio"
+                                                                value="rbRound" checked="checked" /><label
+                                                                for="round-buttom">Round Trip</label>
+                                                        </span>
+                                                        <span class="grayColor smallTxt mrgR10"><input id="oneWay"
+                                                                type="radio" name="bookingRadio"
+                                                                value="rbOneWay" /><label for="oneWay">One
+                                                                Way</label></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="from">From</label>
+                                                        <input name="cityinput" type="text" id="from"
+                                                            class="autocomplete CHautocompletewidth smallTxt"
+                                                            aria-autocomplete="list" aria-owns="tat_table"
+                                                            title="Country From" aria-expanded="true" autocomplete="off"
+                                                            role="combobox" aria-describedby="deptInfo"
+                                                            aria-haspopup="true" valueisvalid="0" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="to">To</label>
+                                                        <input name="cityinput" type="text" id="to"
+                                                            class="autocomplete CHautocompletewidth smallTxt"
+                                                            aria-autocomplete="list" aria-owns="tat_table"
+                                                            title="Country to" aria-expanded="true" autocomplete="off"
+                                                            role="combobox" aria-describedby="deptInfo"
+                                                            aria-haspopup="true" valueisvalid="0" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="departure">Departure Date</label>
+                                                        <input type="text" id="departure"
+                                                            class="inputdatepicker side-icone" />
+                                                        <span class="icone-input-side">
+                                                            <i class="fas fa-calendar-week"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="return">Return Date</label>
+                                                        <input type="text" id="return"
+                                                            class="inputdatepicker side-icone" />
+                                                        <span class="icone-input-side">
+                                                            <i class="fas fa-calendar-week"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="submite-buttom">
+                                                        <button type="submit">BOOK</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div class="tab-pane" id="tab3" role="tabpanel">
-                                        aaaa
+                                        <h4 class="tap-title">
+                                            Flight Status
+
+                                        </h4>
+
+                                        <p class="prag">
+                                            Flight Status information gives you real time information on all EGYPTAIR
+                                            group flights for yesterday, today and tomorrow. To view flight status you
+                                            have two choices for selection: flight number or flight route.
+                                        </p>
+                                        <h4 class="tap-title">
+                                            Choose Date & Airlines
+
+
+                                        </h4>
+                                        <form class="booking-Tapform" action="">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="departure">Departure Date</label>
+                                                        <input type="text" id="departure"
+                                                            class="inputdatepicker side-icone">
+                                                        <span class="icone-input-side">
+                                                            <i class="fas fa-calendar-week"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <p class="prag2">
+                                                        Please Select one of the following Airlines listed below:
+                                                    </p>
+                                                    <div class="inputCont">
+                                                        <span class="grayColor smallTxt mrgR10">
+                                                            <input id="round-buttom" type="radio" name="bookingRadio"
+                                                                value="rbRound" checked="checked"><label
+                                                                for="round-buttom">Round Trip</label>
+                                                        </span>
+                                                        <span class="grayColor smallTxt mrgR10"><input id="oneWay"
+                                                                type="radio" name="bookingRadio" value="rbOneWay"><label
+                                                                for="oneWay">One Way</label></span>
+                                                    </div>
+                                                    <div class="inputCont">
+                                                        <span class="grayColor smallTxt mrgR10">
+                                                            <input id="round-buttom" type="radio" name="bookingRadio"
+                                                                value="rbRound" checked="checked"><label
+                                                                for="round-buttom">Round Trip</label>
+                                                        </span>
+                                                        <span class="grayColor smallTxt mrgR10"><input id="oneWay"
+                                                                type="radio" name="bookingRadio" value="rbOneWay"><label
+                                                                for="oneWay">One Way</label></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                    <div class="LabelCont mrgB10">
+                                                        <label
+                                                            for="flight-input"
+                                                            id="flight-input"
+                                                            class="mdLbl darkGray innerFlightLbl">Flight Number *</label>
+                                                            <input type="text" class="input-width-2" required placeholder="(ex. for flight number MS777, enter 777)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                <div class="col-md-12">
+                                                    <div class="submite-buttom">
+                                                        <button type="submit">Find Flight</button>
+                                                        <button type="submit">Reset</button>
+                                                        <span class="buttn-span">  For flights after tomorrow's date, use Timetable.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane" id="tab4" role="tabpanel">
+                                        <h4 class="tap-title">
+                                            My Booking
+
+
+                                        </h4>
+
+                                        <p class="prag">
+                                            Our website not only makes everything convenient for you it puts you in control. Now you can conveniently manage your booking online by choosing your seat, selecting required meals, modifying your booking class or even changing your destination. You can also save your valuable time in the airport by paying in advance for excess baggage.
+
+                                        </p>
+                                        <p class="prag">
+                                            Enter your details to see and modify your bookings
+
+                                        </p>
+                                        <form class="booking-Tapform" action="">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                    <div class="LabelCont mrgB10">
+                                                        <label
+                                                            for="tap-4-input1"
+                                                            id="tap-4-inputlable"
+                                                            class="mdLbl darkGray innerFlightLbl">Booking reference</label>
+                                                            <input type="text" id="tap-4-input1" required >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                    <div class="LabelCont mrgB10">
+                                                        <label
+                                                            for="tap-4-inputlable2"
+                                                            id="flight-input"
+                                                            class="mdLbl darkGray innerFlightLbl">Passenger's last name</label>
+                                                            <input type="text" id="tap-4-input2" required >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                <div class="col-md-12">
+                                                    <div class="submite-buttom">
+                                                        <button type="submit">Find Flight</button>
+                                                        <a href="#" style="margin: 10px 0; display: block; font-weight: 600;" class="buttn-span"> How to find your booking reference ? </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -476,7 +656,6 @@
                 </div>
                 <!-- boogink-section -->
 
-
                 <!-- additional-services-section -->
                 <div class="additional-services-section pad-20">
                     <div class="container">
@@ -484,8 +663,6 @@
                             <div class="col-md-12">
                                 <div class="additional-services-box">
                                     <div class="row">
-
-
                                         <div class="col-md-2">
                                             <a href="#">
                                                 <i class="fas fa-suitcase"></i>
@@ -522,7 +699,6 @@
                                                 <span id="BaggageText" class="listText">Star Travel Info</span>
                                             </a>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -530,15 +706,6 @@
                     </div>
                 </div>
                 <!-- additional-services-section -->
-
-
-
-
-
-
-
-
-
 
                 <!-- plan-section -->
                 <div class="plan-section pad-20">

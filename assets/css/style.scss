@@ -385,7 +385,18 @@ body {
       font-size: 20px;
       font-weight: 500;
     }
-
+    .prag{
+      font-size: 18px;
+      color: rgba($white-color, 1);
+      font-weight: 300;
+      margin: 20px 0;
+    }
+    .prag2{
+      margin: 5px 0;
+      font-size: 18px;
+      color: rgba($white-color, 1);
+      font-weight: 300;
+    }
     .booking-Tapform {
       .inputCont {
         margin: 20px 0;
@@ -427,6 +438,9 @@ body {
           &:focus {
             outline: none;
             box-shadow: none;
+          }
+          &.input-width-2{
+            width: 480px;
           }
         }
 
@@ -527,6 +541,12 @@ body {
           background-color: transparent;
           color: rgba($white-color, 1);
         }
+      }
+      .buttn-span{
+        font-size: 14px;
+        color: rgba($white-color, 1);
+        font-weight: 300;
+        margin: 0 10px;
       }
     }
 

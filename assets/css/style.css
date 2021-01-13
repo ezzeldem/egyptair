@@ -443,6 +443,20 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   font-weight: 500;
 }
 
+.boogink-section .tab-content .prag {
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.boogink-section .tab-content .prag2 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+}
+
 .boogink-section .tab-content .booking-Tapform .inputCont {
   margin: 20px 0;
 }
@@ -490,6 +504,10 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.boogink-section .tab-content .booking-Tapform .form-group input.input-width-2 {
+  width: 480px;
 }
 
 .boogink-section .tab-content .booking-Tapform .form-group .icone-input-side {
@@ -607,6 +625,13 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
 .boogink-section .tab-content .booking-Tapform .submite-buttom button:hover {
   background-color: transparent;
   color: white;
+}
+
+.boogink-section .tab-content .booking-Tapform .submite-buttom .buttn-span {
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  margin: 0 10px;
 }
 
 .additional-services-section .additional-services-box {
