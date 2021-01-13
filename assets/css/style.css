@@ -267,6 +267,7 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   margin: 0;
   -webkit-box-shadow: 0px 0px 12px rgba(75, 71, 72, 0.2);
           box-shadow: 0px 0px 12px rgba(75, 71, 72, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .nav-bar-section .nav-box {
@@ -348,6 +349,7 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin: -86px 0;
 }
 
 .boogink-section {
