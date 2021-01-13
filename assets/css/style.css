@@ -43,7 +43,7 @@ body {
   color: #053067;
 }
 
-.trans-4, .link-box .link-style, .search-box-pop, .search-box-pop .search-box-pop-form .search-form .form-group input, .search-box-pop .search-box-pop-form .search-form .form-group .search-form-button, .search-box-pop .search-box-pop-form .close-pop-botton span, .top-header .top-header-ul ul li a, .nav-bar-section .nav-box, .nav-bar-section .nav-box ul li .sub-menu li a, .nav-bar-section .nav-box ul li a, .boogink-section .list-group .list-group-item i, .boogink-section .tab-content .booking-Tapform .submite-buttom button, .additional-services-section .additional-services-box a, .plan-section .plan-box .plan-link, .about-section .about-box .about-content .read-more a, .footer-section .footer-ul ul li a {
+.trans-4, .link-box .link-style, .search-box-pop, .search-box-pop .search-box-pop-form .search-form .form-group input, .search-box-pop .search-box-pop-form .search-form .form-group .search-form-button, .search-box-pop .search-box-pop-form .close-pop-botton span, .top-header .top-header-ul ul li a, .nav-bar-section .nav-box, .nav-bar-section .nav-box ul li .sub-menu li a, .nav-bar-section .nav-box ul li a, .boogink-section .list-group .list-group-item i, .boogink-section .tab-content .booking-Tapform .submite-buttom button, .additional-services-section .additional-services-box a, .additional-services-section .additional-services-box a i, .plan-section .plan-box .plan-link, .about-section .about-box .about-content .read-more a, .footer-section .footer-ul ul li a {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -718,6 +718,11 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   font-size: 30px;
   margin: 0 -14px;
   margin: 20px;
+}
+
+.additional-services-section .additional-services-box a:hover i {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .additional-services-section .additional-services-box a i {

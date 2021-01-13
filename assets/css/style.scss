@@ -621,7 +621,13 @@ body {
       margin: 0 -14px;
       @extend.trans-4;
       margin: 20px;
+      &:hover{
+        i{
+          transform: scale(1.05 )   
+        }
+      }
       i {
+        @extend.trans-4;
         width: 80px;
         height: 80px;
         border-radius: 50%;
