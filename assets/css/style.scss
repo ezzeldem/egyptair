@@ -245,8 +245,7 @@ body {
   position: relative;
   z-index: 1;
   padding: 14px 0; margin: 0;
-  box-shadow: 0px 0px 12px rgba($gray-color, 0.2);
-  background-color: rgba($white-color, .4);
+  box-shadow: inset 0px -20px 41px -7px  rgba($white-color, 0.2);
   .nav-box {
     height: 100%;
     display: flex;
@@ -314,7 +313,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin: -86px 0;
+  margin: -86px 0 0;
 }
 // banner-section
 
