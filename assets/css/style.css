@@ -43,13 +43,28 @@ body {
   color: #053067;
 }
 
-.trans-4, .link-box .link-style, .search-box-pop, .search-box-pop .search-box-pop-form .search-form .form-group input, .search-box-pop .search-box-pop-form .search-form .form-group .search-form-button, .search-box-pop .search-box-pop-form .close-pop-botton span, .top-header .top-header-ul ul li a, .nav-bar-section .nav-box ul li .sub-menu li a, .nav-bar-section .nav-box ul li a, .boogink-section .list-group .list-group-item i, .boogink-section .tab-content .booking-Tapform .submite-buttom button, .additional-services-section .additional-services-box a, .plan-section .plan-box .plan-link, .about-section .about-box .about-link img, .about-section .about-box .about-link .about-text, .footer-section .footer-ul ul li a {
+.trans-4, .link-box .link-style, .search-box-pop, .search-box-pop .search-box-pop-form .search-form .form-group input, .search-box-pop .search-box-pop-form .search-form .form-group .search-form-button, .search-box-pop .search-box-pop-form .close-pop-botton span, .top-header .top-header-ul ul li a, .nav-bar-section .nav-box, .nav-bar-section .nav-box ul li .sub-menu li a, .nav-bar-section .nav-box ul li a, .boogink-section .list-group .list-group-item i, .boogink-section .tab-content .booking-Tapform .submite-buttom button, .additional-services-section .additional-services-box a, .plan-section .plan-box .plan-link, .about-section .about-box .about-link img, .about-section .about-box .about-link .about-text, .footer-section .footer-ul ul li a {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
 
 .over-flow {
   overflow-y: hidden;
+}
+
+.opne-menu {
+  left: 0 !important;
+}
+
+.over-lay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  display: none;
 }
 
 .link-box .link-style {
@@ -269,7 +284,12 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
           box-shadow: inset 0px -20px 41px -7px rgba(255, 255, 255, 0.2);
 }
 
+.nav-bar-section .menu-icon {
+  display: none;
+}
+
 .nav-bar-section .nav-box {
+  z-index: 99999999;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,6 +300,10 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.nav-bar-section .nav-box .close-icon {
+  display: none;
 }
 
 .nav-bar-section .nav-box ul {
@@ -907,6 +931,67 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
 }
 
 @media (max-width: 992px) {
+  .nav-bar-section .menu-icon {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-bar-section .menu-icon i {
+    cursor: pointer;
+    font-size: 22px;
+    color: #053067;
+  }
+  .nav-bar-section .nav-box {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    bottom: 0;
+    background-color: #053067;
+    width: 220px;
+    display: block;
+    padding: 50px 0;
+    -webkit-box-shadow: 6px 0 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 6px 0 8px rgba(0, 0, 0, 0.5);
+  }
+  .nav-bar-section .nav-box .close-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+  }
+  .nav-bar-section .nav-box ul {
+    display: block;
+  }
+  .nav-bar-section .nav-box ul li {
+    margin-top: 10px;
+  }
+  .nav-bar-section .nav-box ul li a {
+    color: white;
+  }
+  .nav-bar-section .nav-box ul li .sub-menu {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0 0 10px 0;
+    margin: 0 0 10px;
+    left: 0;
+    top: 0;
+    width: unset;
+    position: relative;
+    background-color: transparent;
+  }
+  .nav-bar-section .nav-box ul li .sub-menu li a {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: unset !important;
+  }
   .boogink-section .list-group .list-group-item {
     padding-left: 22px;
     font-size: 9px;
@@ -925,6 +1010,12 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
 }
 
 @media (max-width: 772px) {
+  .top-header .top-header-ul ul li a {
+    font-size: 8px;
+  }
+  .bannerIntro-section {
+    height: 41vh;
+  }
   .banner-section {
     padding: 50px 0 50px;
   }

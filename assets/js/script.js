@@ -24,6 +24,17 @@ $(document).ready(function(){
         $('.search-box-pop').removeClass('open-pop-up');
         $('body').removeClass('over-flow');
     });
+    // opne menu
+    $('.nav-bar-section .menu-icon').click(function(){
+        $('.nav-bar-section .nav-box').addClass('opne-menu');
+        $('body').addClass('over-flow');
+        $('.over-lay').show();
+    });
+    $('.nav-bar-section .nav-box .close-icon, .over-lay').click(function(){
+        $('.nav-bar-section .nav-box').removeClass('opne-menu');
+        $('body').removeClass('over-flow');
+        $('.over-lay').hide();
+    });
 
     // datepicker
     $( ".inputdatepicker" ).datepicker();
