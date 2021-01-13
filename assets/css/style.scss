@@ -473,6 +473,7 @@ body {
         display: flex;
         justify-content: space-between;
         .select-box{
+          margin: 3px 0;
           .selct-info{
             display: block;
             font-size: 14px;
@@ -497,7 +498,7 @@ body {
 
 
       .directfly-box{
-
+        flex-wrap: wrap;
         display: flex;
         align-items: flex-end;
       .classOption-plane{
@@ -824,7 +825,15 @@ body {
       }
     }
 
-
+    .additional-services-section{
+         .additional-services-box{
+            a{
+               span{
+                font-size: 11px;
+               }
+              }
+            }
+          }
 }
 
 
@@ -850,12 +859,30 @@ body {
     }
   }
 
-  .footer-section {
-    .copy-box {
-      text-align: center;
-      display: block;
-    }
+
+  .boogink-section {
+  .list-group{
+    flex-direction: column;
+    .list-group-item{
+      font-size: 12px;
+      &::before,&::after{
+        display: none;
+      }
+      } 
   }
+  .tab-content{
+     .prag{
+      font-size: 12px;
+      margin: 8px 0;
+     }
+    }
+    
+
+
+  }
+
+
+
 
   .additional-services-section {
     .additional-services-box {
@@ -869,6 +896,13 @@ body {
           font-size: 10px;
         }
       }
+    }
+  }
+
+  .footer-section {
+    .copy-box {
+      text-align: center;
+      display: block;
     }
   }
 }
