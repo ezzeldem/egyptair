@@ -341,7 +341,7 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
 }
 
 .boogink-section {
-  margin: 60px 0;
+  margin: 60px 0 0;
 }
 
 .boogink-section .list-group {
@@ -540,6 +540,8 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
 
 .boogink-section .tab-content .booking-Tapform .selcet-row {
   margin: 20px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -874,6 +876,28 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .boogink-section .list-group .list-group-item {
+    padding-left: 34px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .boogink-section .list-group .list-group-item {
+    padding-left: 22px;
+    font-size: 9px;
+  }
+  .boogink-section .list-group .list-group-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    height: 57px;
+    width: 28px;
+  }
 }
 
 @media (max-width: 772px) {
