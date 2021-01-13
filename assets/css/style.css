@@ -1138,5 +1138,8 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
     text-align: center;
     display: block;
   }
+  .open-pop-up .search-box-pop-form .search-form .form-group input {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
