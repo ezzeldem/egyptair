@@ -21,6 +21,7 @@ $white-color: #fff;
 $balck-color: #000;
 $min-color: #053067;
 $sub-color: #041571;
+$bluesky-color: #3f4d9e;
 $gray-color: #4b4748;
 
 // var
@@ -352,7 +353,7 @@ body {
     align-items: flex-end;
     overflow: hidden;
     .list-group-item {
-      background-color: rgba($min-color, 0.6);
+      background-color: rgba($bluesky-color, 0.6);
       align-items: center;
       display: flex;
       justify-content: space-between;
@@ -380,7 +381,7 @@ body {
         width: 46px;
         opacity: 0;
         border-top-right-radius: 100%;
-        background-color: rgba($min-color, 1);
+        background-color: rgba($bluesky-color, 1);
         box-shadow: 4px 0px 2px rgba($white-color, 0.4);
       }
       &::before {
@@ -394,14 +395,14 @@ body {
         opacity: 0;
         border-top-left-radius: 100%;
         box-shadow: -4px 0px 2px rgba($white-color, 0.4);
-        background-color: rgba($min-color, 1);
+        background-color: rgba($bluesky-color, 1);
       }
       &.active {
         padding: 16px;
-        background-color: rgba($min-color, 1);
+        background-color: rgba($bluesky-color, 1);
         color: rgba($white-color, 1);
         border: 0;
-        z-index: -1;
+        // z-index: -1;
         i {
           transform: translate(-9px, -17px);
           text-shadow: 12px 6px rgba($white-color, 0.3);
@@ -415,7 +416,7 @@ body {
   }
 
   .tab-content {
-    background-color: rgba($min-color, 1);
+    background-color: rgba($bluesky-color, 1);
     padding: 40px;
     position: relative;
     &:after {

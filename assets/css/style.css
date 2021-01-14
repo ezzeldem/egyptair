@@ -397,7 +397,7 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
 }
 
 .boogink-section .list-group .list-group-item {
-  background-color: rgba(5, 48, 103, 0.6);
+  background-color: rgba(63, 77, 158, 0.6);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -431,7 +431,7 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   width: 46px;
   opacity: 0;
   border-top-right-radius: 100%;
-  background-color: #053067;
+  background-color: #3f4d9e;
   -webkit-box-shadow: 4px 0px 2px rgba(255, 255, 255, 0.4);
           box-shadow: 4px 0px 2px rgba(255, 255, 255, 0.4);
 }
@@ -447,15 +447,14 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
   border-top-left-radius: 100%;
   -webkit-box-shadow: -4px 0px 2px rgba(255, 255, 255, 0.4);
           box-shadow: -4px 0px 2px rgba(255, 255, 255, 0.4);
-  background-color: #053067;
+  background-color: #3f4d9e;
 }
 
 .boogink-section .list-group .list-group-item.active {
   padding: 16px;
-  background-color: #053067;
+  background-color: #3f4d9e;
   color: white;
   border: 0;
-  z-index: -1;
 }
 
 .boogink-section .list-group .list-group-item.active i {
@@ -469,7 +468,7 @@ html[lang="ar"] .search-box-pop .search-box-pop-form .search-form .form-group .s
 }
 
 .boogink-section .tab-content {
-  background-color: #053067;
+  background-color: #3f4d9e;
   padding: 40px;
   position: relative;
 }
